@@ -12,6 +12,10 @@ Website tĩnh dùng như bộ slide bán hàng tương tác khi tư vấn khách
 
 Dữ liệu demo nằm trong `app.js` (hàm `defaultConfig`), không dùng `default-data.json`. Nhờ vậy mở thẳng `index.html` bằng đúp chuột vẫn chạy, vì trình duyệt chặn `fetch` tệp JSON khi mở kiểu `file://`.
 
+## Bản trình bày báo giá
+
+`fnb_quote_presentation-3.html` là bản trình bày báo giá độc lập, được chia riêng thành HTML, CSS, JavaScript và dữ liệu mẫu JSON. Bản này tải dữ liệu từ `fnb_quote_presentation-3.json`, vì vậy cần mở qua local web server thay vì mở trực tiếp bằng `file://`. Chạy `python3 -m http.server` trong thư mục dự án rồi truy cập `http://localhost:8000/fnb_quote_presentation-3.html`.
+
 ## Cách dùng
 
 Chạy thử: mở `index.html` bằng Chrome/Edge. Hoặc chạy `python3 -m http.server` trong thư mục rồi vào http://localhost:8000.
