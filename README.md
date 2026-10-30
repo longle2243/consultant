@@ -14,7 +14,9 @@ Dữ liệu demo nằm trong `app.js` (hàm `defaultConfig`), không dùng `defa
 
 ## Bản trình bày báo giá
 
-`fnb_quote_presentation-3.html` là bản trình bày báo giá độc lập, được chia riêng thành HTML, CSS, JavaScript và dữ liệu mẫu JSON. Bản này tải dữ liệu từ `fnb_quote_presentation-3.json`, vì vậy cần mở qua local web server thay vì mở trực tiếp bằng `file://`. Chạy `python3 -m http.server` trong thư mục dự án rồi truy cập `http://localhost:8000/fnb_quote_presentation-3.html`.
+`fnb_quote_presentation-3.html` là bản trình bày báo giá độc lập, được chia riêng thành HTML, CSS, JavaScript và dữ liệu JSON. Bản này tải dữ liệu từ `fnb_quote_presentation-3.json`, vì vậy cần mở qua local web server thay vì mở trực tiếp bằng `file://`. Chạy `python3 -m http.server` trong thư mục dự án rồi truy cập `http://localhost:8000/fnb_quote_presentation-3.html` (GitHub Pages vẫn phục vụ bình thường).
+
+Trong bản báo giá, bấm bánh răng để chọn nhóm nội dung, chỉnh sửa rồi bấm **Lưu chỉnh sửa**. Thay đổi được lưu trong `localStorage` của trình duyệt hiện tại. Bấm **Xuất JSON** để tải toàn bộ dữ liệu thành `fnb_quote_presentation-3.json`; sau đó tự upload file này lên GitHub để cập nhật dữ liệu trên Pages. Không có upload tự động hoặc cần token. Nút **Hủy** bỏ thay đổi chưa lưu; trạng thái trong hộp chỉnh sửa cho biết khi nào cần xuất JSON.
 
 ## Cách dùng
 
@@ -44,7 +46,7 @@ Bánh răng ở góc trên: sửa thương hiệu, gói, công việc, quy trìn
 ## Triển khai lên GitHub Pages
 
 1. Tạo repository mới trên GitHub (ví dụ `tu-van-website`).
-2. Tải 4 tệp `index.html`, `styles.css`, `app.js`, `README.md` lên nhánh `main` (nút **Add file → Upload files**), rồi **Commit**.
+2. Tải các tệp của website lên nhánh `main` (nút **Add file → Upload files**), rồi **Commit**. Nếu dùng bản báo giá độc lập, tải thêm `fnb_quote_presentation-3.html`, `fnb_quote_presentation-3.css`, `fnb_quote_presentation-3.js` và `fnb_quote_presentation-3.json`.
 3. Vào **Settings → Pages**. Ở **Build and deployment**, chọn **Deploy from a branch**, nhánh `main`, thư mục `/ (root)`, bấm **Save**.
 4. Đợi 1–2 phút, truy cập `https://<tên-github>.github.io/<tên-repo>/`.
 

@@ -1,7 +1,7 @@
 {
-  "brand": "WEB SOLUTIONS",
-  "client": "Doanh nghiệp F&B",
-  "title": "Giải pháp website cho thương hiệu F&B",
+  "brand": "LONG LE NASANI",
+  "client": "",
+  "title": "Giải pháp Digital Marketing",
   "desc": "Tổng hợp phạm vi triển khai, phương án đầu tư và lộ trình thực hiện — rõ ràng từ đầu để hai bên dễ dàng thống nhất.",
   "scopeIntro": "Mỗi hạng mục được nêu rõ công việc, số lượng và thời gian hỗ trợ để khách hàng dễ đối chiếu khi nghiệm thu.",
   "scope": [
@@ -13,27 +13,9 @@
     ],
     [
       "Thiết kế website",
-      "Cấu trúc website",
-      "Trang chủ, giới thiệu, thực đơn/dịch vụ, thư viện hình ảnh và liên hệ; thiết lập menu.",
-      "Theo gói đã chọn"
-    ],
-    [
-      "Thiết kế website",
-      "Tích hợp liên hệ",
-      "Nút gọi điện, Zalo, liên kết mạng xã hội, Google Maps và form liên hệ.",
-      "Theo thông tin khách cung cấp"
-    ],
-    [
-      "Thiết kế website",
       "Nội dung & SEO cơ bản",
       "Nhập nội dung, hình ảnh được cung cấp; thiết lập tiêu đề, mô tả SEO và các thông tin cơ bản.",
       "SEO on-page cơ bản"
-    ],
-    [
-      "Thiết kế website",
-      "Kiểm tra & bàn giao",
-      "Kiểm tra liên kết, hiển thị di động, bàn giao website và hướng dẫn quản trị.",
-      "1 lần bàn giao"
     ],
     [
       "Facebook Fanpage",
@@ -54,52 +36,40 @@
       "3 tháng"
     ],
     [
-      "Dịch vụ hỗ trợ khác",
-      "Hướng dẫn quản trị website",
-      "Hướng dẫn khách hàng tự cập nhật nội dung sau khi bàn giao.",
-      "Khi bàn giao"
+      "Google Map",
+      "Xác minh doanh nghiệp Map",
+      "",
+      ""
     ]
   ],
   "packages": [
     {
       "name": "Phổ thông",
       "sub": "Nền tảng cần thiết để hiện diện chuyên nghiệp",
-      "price": 8000000,
+      "price": 7000000,
       "features": [
-        "Website giới thiệu doanh nghiệp",
-        "Tối đa 5 trang nội dung",
-        "Giao diện responsive",
-        "Nút liên hệ cơ bản",
-        "SEO on-page cơ bản",
-        "1 vòng chỉnh sửa giao diện"
+        "Trang cơ bản",
+        "Kèm những hạng mục hỗ trợ"
       ],
       "featured": false
     },
     {
       "name": "Ưa thích",
       "sub": "Cân bằng giữa hình ảnh thương hiệu và tính năng",
-      "price": 12000000,
+      "price": 9000000,
       "features": [
-        "Bao gồm gói Phổ thông",
-        "Cấu trúc trang theo nhu cầu F&B",
-        "Khu vực thực đơn / dịch vụ",
-        "Tích hợp bản đồ và mạng xã hội",
-        "Tối ưu SEO on-page mở rộng",
-        "2 vòng chỉnh sửa giao diện"
+        "Trang Responsive",
+        "Kèm những hạng mục hỗ trợ"
       ],
       "featured": true
     },
     {
       "name": "VIP",
       "sub": "Tùy biến sâu hơn theo yêu cầu thương hiệu",
-      "price": 18000000,
+      "price": 12000000,
       "features": [
-        "Bao gồm gói Ưa thích",
-        "Thiết kế giao diện tùy biến nâng cao",
-        "Bổ sung trang theo phạm vi thống nhất",
-        "Hiệu ứng và thành phần nâng cao",
-        "Tối ưu trải nghiệm chuyển đổi",
-        "3 vòng chỉnh sửa giao diện"
+        "Trang Responsive SSL",
+        "Kèm những hạng mục hỗ trợ"
       ],
       "featured": false
     }
@@ -108,12 +78,12 @@
   "process": [
     {
       "name": "Khởi động dự án",
-      "time": "Ngày 1–2",
+      "time": "Ngày 3–5",
       "desc": "Xác nhận gói, thống nhất phạm vi, nhận nội dung/hình ảnh và tạm ứng đợt 1."
     },
     {
       "name": "Thiết kế & phát triển",
-      "time": "Ngày 3–8",
+      "time": "Ngày 5–7",
       "desc": "Triển khai giao diện, xây dựng các trang và cập nhật bản xem trước cho khách hàng."
     },
     {
@@ -124,19 +94,19 @@
   ],
   "payments": [
     {
-      "pct": "40%",
-      "name": "Đợt 1 · Khởi động",
-      "desc": "Khi xác nhận phương án và bắt đầu dự án."
+      "pct": "50%",
+      "name": "Đợt 1 · Tạm Ứng",
+      "desc": "Khi xác nhận phương án và bắt đầu triển khai."
     },
     {
-      "pct": "40%",
-      "name": "Đợt 2 · Bản xem trước",
-      "desc": "Khi hoàn thành phần giao diện và các trang chính."
+      "pct": "Đăng Kí Dung Lượng",
+      "name": "Đợt 2 · Duyệt Demo",
+      "desc": "Khi hoàn thành phần thiết kế giao diện."
     },
     {
-      "pct": "20%",
-      "name": "Đợt 3 · Bàn giao",
-      "desc": "Sau nghiệm thu, trước khi bàn giao hoàn tất."
+      "pct": "50%",
+      "name": "Đợt 3 · Nghiệm Thu",
+      "desc": "Hướng dẫn sử dụng trang"
     }
   ],
   "note": "Thời gian triển khai được tính từ khi nhận đủ nội dung, hình ảnh và thông tin cần thiết từ khách hàng. Các mốc có thể thay đổi nếu phạm vi công việc được điều chỉnh hoặc phản hồi bị chậm."

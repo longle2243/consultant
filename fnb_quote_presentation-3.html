@@ -62,28 +62,22 @@
 </main>
 <div class="overlay" id="editorOverlay">
   <div class="panel">
-    <div class="panelhead"><div><div class="eyebrow">TÙY CHỈNH TẠI CHỖ</div><h2>Chỉnh sửa nội dung báo giá</h2></div><button class="close" id="closeEditor">×</button></div>
-    <p class="help">Các thay đổi được lưu trong trình duyệt trên máy này. Không cần backend; khi đổi máy hoặc trình duyệt, dữ liệu không tự đồng bộ.</p>
-    <div class="formgrid">
-      <div class="field"><label>Tên công ty / thương hiệu</label><input id="editBrand"></div>
-      <div class="field"><label>Tên khách hàng / dự án</label><input id="editClient" placeholder="Ví dụ: Nhà hàng ABC"></div>
-      <div class="field full"><label>Tiêu đề chính</label><input id="editTitle"></div>
-      <div class="field full"><label>Mô tả mở đầu</label><textarea id="editDesc"></textarea></div>
-      <div class="field full"><label>Dịch vụ &amp; hạng mục (mỗi dòng một hạng mục)</label><textarea id="editScope" style="min-height:220px"></textarea><span class="help">Định dạng: Nhóm | Hạng mục | Nội dung công việc | Số lượng / thời gian. Các dòng cùng tên Nhóm sẽ được gộp chung một khối.</span></div>
-      <div class="field"><label>Gói Phổ thông — giá (VNĐ)</label><input id="editPrice0" type="number" min="0"></div>
-      <div class="field"><label>Gói Phổ thông — tên phụ</label><input id="editSub0"></div>
-      <div class="field full"><label>Gói Phổ thông — hạng mục (mỗi dòng một mục)</label><textarea id="editFeatures0"></textarea></div>
-      <div class="field"><label>Gói Ưa thích — giá (VNĐ)</label><input id="editPrice1" type="number" min="0"></div>
-      <div class="field"><label>Gói Ưa thích — tên phụ</label><input id="editSub1"></div>
-      <div class="field full"><label>Gói Ưa thích — hạng mục</label><textarea id="editFeatures1"></textarea></div>
-      <div class="field"><label>Gói VIP — giá (VNĐ)</label><input id="editPrice2" type="number" min="0"></div>
-      <div class="field"><label>Gói VIP — tên phụ</label><input id="editSub2"></div>
-      <div class="field full"><label>Gói VIP — hạng mục</label><textarea id="editFeatures2"></textarea></div>
-      <div class="field full"><label>Quy trình (mỗi dòng: Tên giai đoạn | thời gian | đầu việc)</label><textarea id="editProcess"></textarea><span class="help">Ví dụ: Khởi động dự án | 1–2 ngày | Xác nhận yêu cầu, nhận nội dung và tạm ứng.</span></div>
-      <div class="field full"><label>Thanh toán (mỗi dòng: tỷ lệ | tên đợt | điều kiện)</label><textarea id="editPayments"></textarea><span class="help">Tỷ lệ ghi dạng 40% — tổng 3 đợt nên bằng 100%. Số tiền được tính tự động theo gói đang chọn.</span></div>
-      <div class="field full"><label>Ghi chú cuối</label><textarea id="editNote"></textarea></div>
+    <div class="panelhead"><div><div class="eyebrow">TÙY CHỈNH TẠI CHỖ</div><h2>Chỉnh sửa nội dung báo giá</h2></div><button class="close" id="closeEditor" aria-label="Đóng">×</button></div>
+    <p class="help">Chỉnh sửa theo từng nhóm. Bản lưu trong trình duyệt này chỉ áp dụng trên thiết bị hiện tại; bấm “Xuất JSON” để tải dữ liệu cập nhật và tự tải lên GitHub.</p>
+    <div id="dataStatus" class="data-status" role="status" aria-live="polite"></div>
+    <div class="editor-layout">
+      <nav id="editorNav" class="editor-nav" aria-label="Nhóm nội dung chỉnh sửa"></nav>
+      <section id="editorContent" class="editor-content" aria-live="polite"></section>
     </div>
-    <div class="panelactions"><button class="controlbtn" id="resetBtn">Khôi phục nội dung mẫu</button><div style="display:flex;gap:8px"><button class="controlbtn" id="printBtn">In / Lưu PDF</button><button class="btn btn-primary" id="saveBtn">Lưu thay đổi</button></div></div>
+    <div class="panelactions">
+      <button class="controlbtn" id="resetBtn">Khôi phục nội dung mẫu</button>
+      <div class="editor-actions">
+        <button class="controlbtn" id="printBtn">In / Lưu PDF</button>
+        <button class="controlbtn" id="cancelBtn">Hủy</button>
+        <button class="controlbtn" id="exportBtn">Xuất JSON</button>
+        <button class="btn btn-primary" id="saveBtn">Lưu chỉnh sửa</button>
+      </div>
+    </div>
   </div>
 </div>
 <div class="toast" id="toast"></div>
